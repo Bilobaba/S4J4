@@ -1,0 +1,8 @@
+<h1> Liste des moussaillons </h1>
+
+<% @moussaillons.each do |m| %>
+
+<p> Username : <%= m.username %>, Email : <%= m.email %> ,
+  <%= link_to "Sa page", moussaillon_path(m) %> </p>
+
+<% end %>

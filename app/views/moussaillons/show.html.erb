@@ -1,0 +1,15 @@
+<h1> Afficher le moussaillon </h1>
+
+<%= form_for @moussaillon do |m| %>
+
+  <%= m.label :username %>:
+  <%= m.text_field :username %><br />
+
+
+  <%= m.label :email %>:
+  <%= m.text_field :email %><br />
+
+
+  <%= link_to "Modifier", edit_moussaillon_path(@moussaillon) %>
+
+<% end %>

@@ -1,0 +1,15 @@
+<h1> Nouveau moussaillon ! </h1>
+
+<%= form_for @moussaillon do |m| %>
+
+
+  <%= m.label :username %>:
+  <%= m.text_field :username, placeholder: "Username" %><br />
+
+
+  <%= m.label :email %>:
+  <%= m.text_field :email, placeholder: "Email" %><br />
+
+  <%= m.submit "Créer ici" %>
+
+<% end %>
