@@ -29,7 +29,7 @@ class MoussaillonsController < ApplicationController
   def update
     @moussaillon = Moussaillon.find(params[:id])
 
-    if @moussaillon.update(params_moussaillon)
+    if @moussaillon.update(mou)
       redirect_to @moussaillon
     else
       render 'edit'
